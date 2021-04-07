@@ -101,3 +101,154 @@ AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
 
 -- View new table 
 SELECT * FROM retirement_info;
+
+-- Remake the retirement_info table with employee number 
+DROP TABLE retirement_info;
+
+SELECT emp_no, first_name, last_name
+INTO retirement_info
+FROM employees
+WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
+
+SELECT * FROM retirement_info;
+
+-- Joining departments and dept_manager tables (Example - Not run!)
+SELECT d.dept_name,
+     dm.emp_no,
+     dm.from_date,
+     dm.to_date
+FROM departments as d
+INNER JOIN dept_manager as dm
+ON d.dept_no = dm.dept_no;
+
+-- Joining retirement_info and dept_emp tables
+SELECT ri.emp_no,
+    ri.first_name,
+	ri.last_name,
+    de.to_date
+FROM retirement_info as ri
+LEFT JOIN dept_emp as de
+ON ri.emp_no = de.emp_no;
+
+-- Join retirement_info with dept_emp and conidtionals 
+-- to factor out already retired employees 
+SELECT ri.emp_no,
+    ri.first_name,
+	ri.last_name,
+    de.to_date
+INTO current_emp
+FROM retirement_info as ri
+LEFT JOIN dept_emp as de
+ON ri.emp_no = de.emp_no
+WHERE de.to_date = ('9999-01-01')
+
+SELECT * FROM current_emp
+SELECT COUNT (first_name) FROM current_emp
+
+-- Join current_emp with dept_emp to include dept_no information
+-- will use groupby to sort multiple lists of departments attributed 
+-- to employees in individual groups to determine number of employees ready
+-- to retire in which departments (hence using SELECT COUNT)
+SELECT COUNT(ce.emp_no), de.dept_no
+INTO retire_dept_info
+FROM current_emp as ce
+LEFT JOIN dept_emp as de
+ON ce.emp_no = de.emp_no
+GROUP BY de.dept_no
+ORDER BY de.dept_no;
+
+SELECT * FROM retire_dept_info
+
+SELECT * FROM salaries
+ORDER BY to_date DESC;
+
+-- Filter Employees  Table again and create new table to reference
+SELECT emp_no, first_name, last_name, gender
+INTO emp_info
+FROM employees
+WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
+
+DROP TABLE emp_info
+
+-- Merge employees, salary, and dept_emp tables to get 1st requested table
+-- Employee Info
+SELECT e.emp_no,
+    e.first_name,
+	e.last_name,
+	e.gender,
+    sal.salary,
+	de.to_date
+INTO emp_info
+FROM employees as e
+LEFT JOIN salaries as sal
+ON e.emp_no = sal.emp_no
+INNER JOIN dept_emp as de 
+ON e.emp_no = de.emp_no
+WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31')
+AND (de.to_date = '9999-01-01');
+
+SELECT * FROM emp_info;
+
+-- List of managers per department
+SELECT  dm.dept_no,
+        d.dept_name,
+        dm.emp_no,
+        ce.last_name,
+        ce.first_name,
+        dm.from_date,
+        dm.to_date
+INTO manager_info
+FROM dept_manager AS dm
+    INNER JOIN departments AS d
+        ON (dm.dept_no = d.dept_no)
+    INNER JOIN current_emp AS ce
+        ON (dm.emp_no = ce.emp_no);
+		
+SELECT * FROM manager_info
+
+-- Department info 
+SELECT 	ce.emp_no,
+		ce.first_name,
+		ce.last_name,
+		d.dept_name
+INTO dept_info
+FROM current_emp as ce
+INNER JOIN dept_emp AS de
+ON (ce.emp_no = de.emp_no)
+INNER JOIN departments AS d
+ON (de.dept_no = d.dept_no);
+
+SELECT * FROM dept_info
+
+-- Skill Drill 
+-- Create qry that will only return info relevant to sales team 
+-- employee number, first name, last name, department name
+SELECT ce.emp_no,
+	   ce.first_name,
+	   ce.last_name,
+	   d.dept_name
+--INTO sales_info_1
+FROM current_emp as ce
+INNER JOIN dept_emp AS de
+ON (ce.emp_no = de.emp_no)
+INNER JOIN departments AS d
+ON (de.dept_no = d.dept_no)
+WHERE (d.dept_name = 'Sales'); 
+
+-- Skill Drill 2
+-- Create qry that will only return info relevant to sales & development teams
+-- employee number, first name, last name, department name
+SELECT ce.emp_no,
+	   ce.first_name,
+	   ce.last_name,
+	   d.dept_name
+--INTO sales_devo_info
+FROM current_emp as ce
+INNER JOIN dept_emp AS de
+ON (ce.emp_no = de.emp_no)
+INNER JOIN departments AS d
+ON (de.dept_no = d.dept_no)
+WHERE d.dept_name IN ('Sales', 'Development');
