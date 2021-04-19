@@ -39,6 +39,17 @@ To further the depth of this analysis, four seperate tables were created for eac
 
 <img width="255" alt="fiftyfive" src="https://user-images.githubusercontent.com/79600550/115167717-8b6a6680-a086-11eb-87ca-e4bed0376533.png">
 
+From these tables we can see that: 
+- Engineers (predictably) make up roughly 50% of each group (quite similarily to the overall numbers)
+  -  10,670 or ~50% ready to retire in the 1952 group 
+  -  11,353 or ~49% ready to retire in the 1953 group 
+  -  11,641 or ~50% ready to retire in the 1954 group 
+  -  11,733 or ~51% ready to retire in the 1955 group 
+- General staff positions (staff/senior staff) make up the second largest portion of each group and are generally equally proportioned across ages
+  - 9,475 or ~45% ready to retire in the 1952 group 
+  -  10,331 or ~ 45% ready to retire in the 1953 group
+  -  10,430 or ~45% ready to retire in the 1954 group 
+  -  10, 260 or ~ 44% ready to retire in the 1955 group 
 
-
+### Support from Mentorship 
 
