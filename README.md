@@ -29,8 +29,15 @@ Not all employees will retire at the same exact time, and knowing how many emplo
 
 The table above shows that employees ready to retire are distributed fairly equally across the four ages. As each year roughly contains 20,000 or so employees ready to retire, one can use this number as a baseline to try and predict how large these retirement waves will be. Although there is definitely no guarantee that employees will retire in chronological order according to their age, this information provides one with some form of insight for future preparation, rooted in solidifed data. 
 
-To further the depth of this analysis, four seperate tables were created for each birth year, and sorted by specific department/title of each employee. (See tables below or reference extras folder/twentytwo.csv, twentythree.csv, twentyfour.csv, and twentyfive.csv)
+To further the depth of this analysis, four seperate tables were created for each birth year, and sorted by specific department/title of each employee. (See tables below or reference extras folder/fiftytwo.csv, fiftythree.csv, fiftyfour.csv, and fiftyfive.csv)
 
+<img width="255" alt="fiftytwo" src="https://user-images.githubusercontent.com/79600550/115167635-552ce700-a086-11eb-8090-8d420e861b8f.png">
+
+<img width="265" alt="fiftythree" src="https://user-images.githubusercontent.com/79600550/115167666-6bd33e00-a086-11eb-9507-47f6dae6a12c.png">
+
+<img width="258" alt="fiftyfour" src="https://user-images.githubusercontent.com/79600550/115167688-77bf0000-a086-11eb-918e-78a4171218bd.png">
+
+<img width="255" alt="fiftyfive" src="https://user-images.githubusercontent.com/79600550/115167717-8b6a6680-a086-11eb-87ca-e4bed0376533.png">
 
 
 
