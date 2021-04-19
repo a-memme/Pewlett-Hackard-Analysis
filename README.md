@@ -23,7 +23,7 @@ Results revealed that:
 Given the above information, there will be a total of 90,398 roles to fill in the given years ahead, assuming that all employees ready to retire will, indeed, retire. 
 
 Further analysis, however, could provide more in-depth insight as to how many roles and which roles by department will need to be filled at different given times. In the table below, employees ready to retire were categorized by the year they were born. 
-Not all employees will retire at the same exact time, and knowing how many employees at what ages are ready, can provide us with greater information on how many individuals will be retiring through each wave, given an assumption that those who are older may be more likely to retire sooner (see image below or reference the extras folder/birthdate_counts.csv).
+Not all employees will retire at the same exact time, and knowing how many employees at what ages are ready, can provide one with greater information on how many individuals will be retiring through each wave, given an assumption that those who are older may be more likely to retire sooner (see image below or reference the extras folder/birthdate_counts.csv).
 
 <img width="224" alt="groupby_birthyear" src="https://user-images.githubusercontent.com/79600550/115167313-28c49b00-a085-11eb-8d40-0d65e52ab7b0.png">
 
