@@ -1,6 +1,6 @@
 # Pewlett-Hackard-Analysis
 ## Purpose 
-Using PostgreSQL to determine the number of employees in Pewlett Hackard who are either up for or close to retirement. These tools were also then used to determine how many senior employees there are in the company who are eligible to participate in an employee mentorship program to help train future employees. Insights are provided as to whether there are sufficient employees eligible for this program to help support the upcoming "silver tsnuami" retirement wave.
+Using PostgreSQL to determine the number of employees in Pewlett Hackard who are either up for or close to retirement. These tools were then used to determine how many senior employees there are in the company who are eligible to participate in an employee mentorship program to help train future employees. Insights are provided as to whether there are sufficient candidates for this program to help support the upcoming "silver tsnuami" retirement wave.
 
 ## Results
 Results revealed that:
