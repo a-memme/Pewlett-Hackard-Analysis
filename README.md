@@ -23,11 +23,11 @@ Results revealed that:
 Given the above information, there will be a total of 90,398 roles to fill in the given years ahead, assuming that all employees ready to retire will, indeed, retire. 
 
 Further analysis, however, could provide more in-depth insight as to how many roles and which roles by department will need to be filled at different given times. In the table below, employees ready to retire were categorized by the year they were born. 
-Not all employees will retire at the same exact time, and knowing how many employees at what ages are ready, can provide us with greater information on how many individuals will be retiring at a given time, with a general assumption that those who are older may be more likely to retire sooner (see image below or reference the extras folder/birthdate_counts.csv).
+Not all employees will retire at the same exact time, and knowing how many employees at what ages are ready, can provide us with greater information on how many individuals will be retiring through each wave, given an assumption that those who are older may be more likely to retire sooner (see image below or reference the extras folder/birthdate_counts.csv).
 
 <img width="224" alt="groupby_birthyear" src="https://user-images.githubusercontent.com/79600550/115167313-28c49b00-a085-11eb-8d40-0d65e52ab7b0.png">
 
-*Reference eextra_queries.sql in Extras folder for all code used to create tables regarding further analysis*
+*Reference extra_queries.sql in Extras folder for all code used to create tables regarding further analysis*
 
 The table above shows that employees ready to retire are distributed fairly equally across the four ages. As each year roughly contains 20,000 or so employees ready to retire, one can use this number as a baseline to try and predict how large these retirement waves will be. Although there is definitely no guarantee that employees will retire in chronological order according to their age, this information provides one with some form of insight for future preparation, rooted in solidifed data. 
 
@@ -41,7 +41,7 @@ To further the depth of this analysis, four seperate tables were created for eac
 
 <img width="255" alt="fiftyfive" src="https://user-images.githubusercontent.com/79600550/115167717-8b6a6680-a086-11eb-87ca-e4bed0376533.png">
 
-From these tables we can see that: 
+From these tables one can see that: 
 - Engineers of all types (predictably) make up roughly 50% of each group (quite similarily to the overall numbers)
   -  10,670 or ~50% ready to retire in the 1952 group 
   -  11,353 or ~49% ready to retire in the 1953 group 
@@ -58,7 +58,7 @@ The generally even distribution of department types across age groups, once agai
 ### Support from Mentorship 
 From the above information, one can make the assumption to prepare for retirement waves occuring in chunks of 20,000 or so employees. Based on the extended analysis, somewhere around 50% of each retirement wave will consist of engineering positions to fill, followed by general staff positions. 
 
-Given that there are 1,549 employees eligible to participate in the program, the company is looking at one mentorship trainer for every 12-13 or so new employees. This is given the assumption that the participation rate from employees eligible for the mentorship program is 100%, and that cycling through groups of new employees as the senior employees retire can happen somewhat seamlessly without much overlap. If we consider a 50% participation rate, there is roughly 1 mentorship trainer for every 25-26 or so new employees. The acceptable ratio of mentor to new employee will be influenced by a number of factors (i.e department, trainer, etc) however, unless the mentorship is mandatory, it may be advisable to look at increasing the number of eligible employees for the program given the unknown nature of participation.
+Given that there are 1,549 employees eligible to participate in the program, the company is looking at one mentorship trainer for every 12-13 or so new employees. This is given the assumption that the participation rate from employees eligible for the mentorship program is 100%, and that cycling through groups of new employees as the senior employees retire can happen somewhat seamlessly without much overlap. If one considers a 50% participation rate, there is roughly 1 mentorship trainer for every 25-26 or so new employees. The acceptable ratio of mentor to new employee will be influenced by a number of factors (i.e department, trainer, etc) however, unless the mentorship is mandatory, it may be advisable to look at increasing the number of eligible employees for the program given the unknown nature of participation.
 
 In addtion, further analysis regarding the mentorship program was also conducted here, grouping individuals eligible for the program into departments/titles once again to compare to that of the ready-to-retire groups (See table below or reference extras folder/mentorship_titles.csv)
 
