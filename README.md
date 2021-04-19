@@ -18,7 +18,7 @@ Results revealed that:
 
 <img width="138" alt="mentorship" src="https://user-images.githubusercontent.com/79600550/115166861-455fd380-a083-11eb-8fe7-b5ac0d25cc80.png">
 
-*Reference the Queries folder/Employee_Database_challenge.sql for all code used to provide the above analysis/tables*
+*Reference Employee_Database_challenge.sql in the Queries folder for all code used to provide the above analysis/tables*
 
 ## Summary 
 ### Roles to Fill 
@@ -29,7 +29,7 @@ Not all employees will retire at the same exact time, and knowing how many emplo
 
 <img width="224" alt="groupby_birthyear" src="https://user-images.githubusercontent.com/79600550/115167313-28c49b00-a085-11eb-8d40-0d65e52ab7b0.png">
 
-*Reference extra_queries.sql for all code used to create new tables in the Extras folder*
+*Reference eextra_queries.sql in Extras folder for all code used to create tables regarding further analysis*
 
 The table above shows that employees ready to retire are distributed fairly equally across the four ages. As each year roughly contains 20,000 or so employees ready to retire, one can use this number as a baseline to try and predict how large these retirement waves will be. Although there is definitely no guarantee that employees will retire in chronological order according to their age, this information provides one with some form of insight for future preparation, rooted in solidifed data. 
 
