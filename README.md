@@ -14,10 +14,24 @@ Results revealed that:
 
 <img width="246" alt="retiring_titles" src="https://user-images.githubusercontent.com/79600550/115166507-98d12200-a081-11eb-8ad1-ac2b7cb99e11.png">
 
-- There is a total of 1,549 employees eligible for a mentorship program to help train upcoming employees following a large retirement wave.
+- There are 1,549 employees eligible to participate in the mentorship program to help train upcoming employees following a large retirement wave.
 
 <img width="138" alt="mentorship" src="https://user-images.githubusercontent.com/79600550/115166861-455fd380-a083-11eb-8fe7-b5ac0d25cc80.png">
 
 ## Summary 
 ### Roles to Fill 
 Given the above information, there will be a total of 90,398 roles to fill in the given years ahead, assuming that all employees ready to retire will, indeed, retire. 
+
+Further analysis, however, could provide more in-depth insight as to how many roles and which roles by department will need to be filled at different given times. In the table below, employees ready to retire were categorized by the year they were born. 
+Not all employees will retire at the same exact time, and knowing how many employees at what ages are ready, can provide us with greater information on how many individuals will be retiring at a given time, with a general assumption that those who are older may be more likely to retire sooner (see image below or reference the extras folder/birthdate_counts.csv).
+
+<img width="224" alt="groupby_birthyear" src="https://user-images.githubusercontent.com/79600550/115167313-28c49b00-a085-11eb-8d40-0d65e52ab7b0.png">
+
+The table above shows that employees ready to retire are distributed fairly equally across the four ages. As each year roughly contains 20,000 or so employees ready to retire, one can use this number as a baseline to try and predict how large these retirement waves will be. Although there is definitely no guarantee that employees will retire in chronological order according to their age, this information provides one with some form of insight for future preparation, rooted in solidifed data. 
+
+To further the depth of this analysis, four seperate tables were created for each birth year, and sorted by specific department/title of each employee. (See tables below or reference extras folder/twentytwo.csv, twentythree.csv, twentyfour.csv, and twentyfive.csv)
+
+
+
+
+
