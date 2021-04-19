@@ -1,6 +1,6 @@
 # Pewlett-Hackard-Analysis
 ## Purpose 
-Using PostgreSQL to determine the number of employees in Pewlett Hackard who are either up for or close to retirement. These tools were also then used to determine how many senior employees there are in the company who are eligible to participate in an employee mentorship program to help train future employees.
+Using PostgreSQL to determine the number of employees in Pewlett Hackard who are either up for or close to retirement. These tools were also then used to determine how many senior employees there are in the company who are eligible to participate in an employee mentorship program to help train future employees. Insights are provided as to whether there are sufficient employees eligible for this program to help support the upcoming "silver tsnuami" retirement wave.
 
 ## Results
 Results revealed that:
@@ -17,6 +17,8 @@ Results revealed that:
 - There are 1,549 employees eligible to participate in the mentorship program to help train upcoming employees following a large retirement wave.
 
 <img width="138" alt="mentorship" src="https://user-images.githubusercontent.com/79600550/115166861-455fd380-a083-11eb-8fe7-b5ac0d25cc80.png">
+
+*Reference the Queries folder/Employee_Database_challenge.sql for all code used to provide the above analysis/tables*
 
 ## Summary 
 ### Roles to Fill 
