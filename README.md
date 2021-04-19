@@ -7,7 +7,7 @@ Results revealed that:
 
 - There are a total of 90,398 employees ready to retire at Pewlett Hackard (see first image below)
 - 44,397 or ~50% of those employees, as of most recently, are in engineering positions - 29,414 as senior engineers, 14,222 as regular engineers, and 1,761 as assistant engineers. (see second image below or reference Data folder/retiring_titles.csv)
-- An extremely small proportion of employees ready for retire are in management positions -  a total of 2 employees (see below).
+- An extremely small portion of employees ready for retire are in management positions -  a total of 2 employees (see below).
 - There are 1,549 employees eligible to participate in the mentorship program to help train upcoming employees following a large retirement wave (see last image below).
 
 <img width="100" alt="total_retiring" src="https://user-images.githubusercontent.com/79600550/115166812-0af63680-a083-11eb-9ed6-372d1df0abac.png"> 
